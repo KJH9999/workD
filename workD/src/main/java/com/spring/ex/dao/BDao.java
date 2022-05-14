@@ -38,6 +38,7 @@ public class BDao {
 		map.put("bName", bName);
 		map.put("bTitle", bTitle);
 		map.put("bContent", bContent);
+		
 		mybatis.insert("BoardMapper.insertBoard", map);
 	}
 

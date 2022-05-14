@@ -7,9 +7,9 @@
 	<title>Home</title>
 </head>
 <body>
-<P>  현재시간 ${serverTime}. </P>
-
-<a href="login">로그인 </a>
-<a href="join">회원가입 </a>
+<h1>WORKD</h1>
+<a href="login">로그인 </a><br/>
+<a href="join">회원가입 </a><br/>
+<a href="userlist">회원모음</a>
 </body>   
 </html>
