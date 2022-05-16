@@ -12,7 +12,19 @@
 		INSERT INTO user(email, pw, name,number,gender,birth_date)
 		VALUES(#{email}, #{pw}, #{name},#{number},#{gender},#{birth_date})
 	</insert>
+	
 
-
+	<select id="login" resultType= "int">
+		SELECT COUNT(*)
+		FROM user
+		WHERE email = #{email} AND pw = #{pw}
+	</select>
+	
+	
+	<select id="forlogin" resultType= "int">
+		SELECT COUNT(*)
+		FROM user
+		WHERE email = "1"
+	</select>
 
 </mapper>

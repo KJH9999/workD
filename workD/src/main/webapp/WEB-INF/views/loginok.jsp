@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="loginOk" method="post">
-		EMAIL : <input type="text" name="email"><br/>
-		<br/>
-		PW : <input type="password" name="pw"><br/>
-		<input type="submit" value="login">
-	</form>
-	
+<h1>·Î±×ÀÎ¤¤ O</h1>
 </body>
 </html>

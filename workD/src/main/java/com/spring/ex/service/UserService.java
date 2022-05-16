@@ -13,6 +13,8 @@ public interface UserService {
 	//list뽑기
 	public List<UserDTO> userlist();
 	// 회원 가입
-	public void insertUser(Model model);	
+	public void insertUser(Model model);
+	//로그인
+	public int loginUser(Model model);	
 	
 }

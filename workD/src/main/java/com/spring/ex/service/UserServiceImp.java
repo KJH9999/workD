@@ -42,10 +42,19 @@ public class UserServiceImp implements UserService{
 		userDAO.insertUser(email,pw,name,number,gender,birth_date);
 	}
 
-
-	
-
-
-
+	@Override
+	public int loginUser(Model model) {
+		Map<String, Object> map = model.asMap();
+		HttpServletRequest request = (HttpServletRequest) map.get("request");
+		
+		String email = request.getParameter("email");
+		String pw = request.getParameter("pw");
+		
+		System.out.println("SER: "+email+pw);
+		userDAO.loginUser(email,pw);
+		
+		return userDAO.loginUser(email,pw);
+	}
+		
 
 }
